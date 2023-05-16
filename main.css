@@ -1,0 +1,70 @@
+body {
+    background-color: white;
+    font-size: small;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: auto;
+    font-size: auto;
+}
+
+img:hover {
+    opacity: 0.6;
+}
+
+.two {
+    font-size: 20px;
+}
+
+.three {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 5px blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.four {
+    color: black;
+    text-shadow: 2px 2px 5px pink;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.five {
+    color: black;
+    text-shadow: 2px 2px 5px chartreuse;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.six {
+    text-indent: 35px;
+}
+
+.seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen {
+    margin: 25px;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: bisque;
+}
+
+.advice {
+    margin: 20px;
+    color: midnightblue;
+}
+
+#lobe {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#lobe td, #lobe th {
+    border: 1px solid gray;
+    padding: 16px;
+}
