@@ -192,6 +192,26 @@
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>
+            <script>
+                document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Get the form data
+  var form = event.target;
+  var firstName = form.firstName.value;
+  var hiii = form.hiii.value;
+  var rate = form.rate.value;
+
+  // Prepare the email body
+  var emailBody = 'First Name: ' + firstName + '\n';
+  emailBody += 'Hope you find this helpful?: ' + hiii + '\n';
+  emailBody += 'If yes, how much did you find this page helpful?: ' + rate + '\n';
+
+  // Send the email
+  window.location.href = 'mailto:adesanyaadetunji2018@gmail.com?subject=Form Submission&body=' + encodeURIComponent(emailBody);
+});
+
+            </script>
 
             
         </article>
