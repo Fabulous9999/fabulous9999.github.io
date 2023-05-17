@@ -195,20 +195,35 @@
             <script>
                 document.querySelector('form').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission behavior
-
+  
   // Get the form data
-  var form = event.target;
-  var firstName = form.firstName.value;
-  var hiii = form.hiii.value;
-  var rate = form.rate.value;
-
-  // Prepare the email body
-  var emailBody = 'First Name: ' + firstName + '\n';
-  emailBody += 'Hope you find this helpful?: ' + hiii + '\n';
-  emailBody += 'If yes, how much did you find this page helpful?: ' + rate + '\n';
-
-  // Send the email
-  window.location.href = 'mailto:adesanyaadetunji2018@gmail.com?subject=Form Submission&body=' + encodeURIComponent(emailBody);
+  var formData = new FormData(event.target);
+  
+  // Prepare the data for submission
+  var data = {};
+  for (var pair of formData.entries()) {
+    data[pair[0]] = pair[1];
+  }
+  
+  // You can now send the form data to the desired destination, such as an API endpoint or email address
+  // For example, you can use AJAX to send the data to a server-side script
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://wa.me+2348138407605', true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        // Request was successful
+        console.log('Form submitted successfully.');
+        // You can perform additional actions here, such as displaying a success message to the user
+      } else {
+        // There was an error with the request
+        console.error('Form submission failed. Status:', xhr.status);
+        // You can handle the error here or display an error message to the user
+      }
+    }
+  };
+  xhr.send(JSON.stringify(data));
 });
 
             </script>
