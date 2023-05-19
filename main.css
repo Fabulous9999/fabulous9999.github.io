@@ -91,12 +91,3 @@ a:active {
     color: rgb(26, 16, 16);
 }
 
-.fabulous {
-    position: fixed;
-    top: 0;
-}
-
-.fabulous:hover {
-    opacity: 1;
-    z-index: 1;
-}
