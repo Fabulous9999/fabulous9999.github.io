@@ -57,6 +57,7 @@ img:hover {
 .advice {
     margin: 20px;
     color: midnightblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #lobe {
@@ -70,7 +71,7 @@ img:hover {
 }
 
 body {
-    background-color: lavenderblush;
+    background-color: rgb(165, 214, 165);
 }
 
 .linkk {
@@ -92,4 +93,14 @@ a:hover {
 
 a:active {
     color: rgb(26, 16, 16);
+}
+
+.fabulous {
+    position: fixed;
+    top: 0;
+}
+
+.fabulous:hover {
+    opacity: 1;
+    z-index: 1;
 }
