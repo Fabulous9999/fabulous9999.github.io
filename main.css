@@ -68,3 +68,28 @@ img:hover {
     border: 1px solid gray;
     padding: 16px;
 }
+
+body {
+    background-color: lavenderblush;
+}
+
+.linkk {
+    color: midnightblue;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: rgb(26, 16, 16);
+}
