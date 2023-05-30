@@ -94,3 +94,20 @@ a:active {
 .out {
     text-align: center;
 }
+
+button {
+    background-color: rgb(252, 123, 145);
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+button:hover {
+    background-color: rgb(116, 116, 219);
+}
